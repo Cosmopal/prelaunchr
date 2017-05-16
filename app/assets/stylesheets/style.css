@@ -1,0 +1,382 @@
+
+@font-face {
+    font-family: Pacifico;
+    src: url(Pacifico.ttf);
+}
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url(Raleway-SemiBold.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.option_btn{
+    cursor: pointer;
+}
+
+.option_btn:hover{
+    text-decoration: none;    
+}
+
+/*----------header-----------*/
+
+.header_back{
+    background: url(header_back.png);
+    background-position: center;
+}
+
+.header_back .name_box{
+    font-family: Pacifico;
+    font-size: 45px;    
+}
+
+.bottom_mrg_remove{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.header_row .info_box{
+    padding-top: 50px;
+    color: #ffffff;
+    max-width: 400px;
+}
+
+/*.header_row .info_box .{
+    font-size: 18px;
+    margin-top: 30px;
+}*/
+.header_row .info_box .btn_box{
+    margin-top: 30px;
+}
+
+.header_row .info_box .btn_box .btn_holder{
+    padding-left: 0px;
+}
+
+
+
+/*----------header-----------*/
+
+/*-----------boy content--------*/
+.feature_area{
+    margin-top: 25px;
+}
+.feature_area .info_row{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.feature_area .app_row{
+    background: #e3e3e3;
+}
+
+.feature_wrp{
+    
+}
+.feature_wrp h3{
+    color: #222222;
+    font-family: Raleway-SemiBold;
+}
+.feature_wrp p{
+    color: #848484;
+    /*margin-top: 10px;*/
+}
+.feature_wrp .btn_box{
+    margin-top: 15px;
+}
+.feature_wrp .btn_box img{
+    max-width: 140px;
+}
+
+
+.iphone_outer{
+    position: relative;
+}
+.iphone_outer .iphone_box{
+    position: absolute;
+    background: url(iphone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+     -webkit-background-size:  auto 100%;
+    -moz-background-size:  auto 100%;
+    -o-background-size:  auto 100%;
+     background-size:  auto 100%;
+    width: 289px;
+    height: 500px;
+}
+
+.testimonials_top_row, .testimonials_bottom_row{
+    background: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.testimonials_top_row .larg_txt{
+    font-family: Raleway-Regular;
+    font-size: 20px;
+}
+
+.testimonials_top_row .sm_txt{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.testimonials_row{
+/*    background: url(../images/testimonials_bg.png);
+    background-position: center;
+    background-repeat: repeat-x;*/
+    /*padding-top: 25px;
+    padding-bottom: 25px;*/
+}
+
+.testimonials_row ul{
+    padding-left: 0px;
+    list-style: none;
+}
+
+.testimonials_row ul li, .testimonials_row div.col-xs-1 {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.testimonials_row ul li p, .testimonials_row p {
+    display: none;
+}
+
+
+.testimonials_row ul li a{
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    display: block;
+}
+
+.testimonials_row ul li a img{
+    padding: 0px;
+    margin: 0px;
+}
+
+.testimonials_row img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); filter: url(desaturate.svg#greyscale);}
+
+
+.testimonials_bottom_row .larg_txt{
+    font-family: Raleway-SemiBold;
+    font-size: 20px;
+}
+.testimonials_bottom_row .sm_txt{
+    color: #848484;
+    font-size: 14px;
+}
+
+.testimonials_bottom_row ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.testimonials_bottom_row ul li{
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.testimonials_bottom_row ul li a{
+    display: block;
+    cursor: pointer;
+    color: #d4d4d4;
+}
+.testimonials_bottom_row ul li a:hover{
+    color: #595959;
+}
+
+.feature_tbl_wrp{
+    margin-top: 60px;
+    width: 76%;
+}
+.feature_tbl_wrp .feature_btn_wrp{
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.feature_btn{
+    background: none;
+    border: none;
+    color: #ffffff;
+}
+.feature_btn:hover{
+    
+    color: #000000;
+}
+
+.feature_highlight{
+    color: #fefefe;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.feature_highlight h3{
+    color: #ffffff;
+}
+.feature_highlight p{
+    color: #fefefe;
+}
+
+/*-----------boy content--------*/
+
+/*-------------footer-----------*/
+
+.footer_row{
+    background: #e3e3e3;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.footer_row ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer_row ul li{
+    display: inline-block;
+    margin: 2px 8px;
+}
+.footer_row ul li a{
+    color: #848484;
+    cursor: pointer;
+}
+.footer_row ul li a:hover{
+    color: #848484;    
+}
+
+/*-------------footer-----------*/
+
+
+/*---------responsive------------*/
+
+@media (max-width: 980px) {
+    .iphone_outer .iphone_box{
+
+        width: 230px;
+        height: 480px;
+    }
+    
+    .feature_wrp h3{
+        font-size: 18px;
+    }
+    .feature_wrp p{
+        font-size: 13px;
+    }
+    
+    .feature_area .info_row{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    .feature_tbl_wrp{        
+        width: 95%;
+    }
+    
+    .testimonials_row ul li a img{
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 800px) {
+    .iphone_outer .iphone_box {
+        height: 450px;
+        width: 213px;
+    }
+       
+}
+
+@media (max-width: 768px) {
+    
+    .iphone_outer .iphone_box{
+        width: 200px;
+        height: 425px;
+    }
+    
+    .testimonials_top_row .larg_txt {
+        font-family: Raleway-Regular;
+        font-size: 18px;
+    }
+    
+    .feature_area .info_row{
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    
+    .testimonials_row ul li a img{
+        max-width: 65px;
+    }
+    
+    
+}
+@media (max-width: 767px) {
+    
+     .iphone_outer .iphone_box{
+        position: relative;
+        margin: 0px auto;
+    
+    }
+    
+    .header_row .info_box .btn_box{
+        margin-top: 15px;
+    }
+    
+    .header_row .info_box{
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+     .bottom_mrg_remove{
+        padding-bottom: 10px;
+    }
+    
+    .header_row .info_box .header_smal_txt{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+
+    .header_row .info_box .btn_box .btn_holder{
+        padding-top: 10px;
+    }
+    
+    .header_row .info_box .btn_box .btn_holder img{
+        margin: 0px auto;
+        max-width: 120px;
+    }
+    
+  
+    .feature_area{
+        margin-top: 2px;
+    }
+    
+}
+
+
+@media (max-width: 640px) {
+    
+    .testimonials_row ul li a img{
+        max-width: 40px;
+    }
+       
+}
+
+@media (max-width: 360px) {
+      .testimonials_bottom_row ul li{
+        display: inline-block;
+        margin-left: 2px;
+        margin-right: 2px;
+    } 
+}
+
+

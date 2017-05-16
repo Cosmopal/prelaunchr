@@ -46,3 +46,8 @@ bower.json
 .elasticbeanstalk
 
 /.env
+/app/assets/fonts/
+/app/assets/images/
+/app/assets/javascripts1/
+/app/assets/images1/
+

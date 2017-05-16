@@ -1,0 +1,38 @@
+<div class="hero">
+  <p class="large brandon">Harry&#8217;s is live</p>
+  <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
+</div>
+
+
+<div class="container-fluid">
+            <div class="row header_back">
+                <div class="container bottom_mrg_remove">
+                    <div class="row bottom_mrg_remove header_row">
+                        <div class="col-sm-6 ">
+                            <div class="info_box center-block">
+                                <h1 class="name_box">Flow</h1>
+                                <p class="header_smal_txt">A great new free bootstrap theme to showcase your new application.</p>
+                                <div class="btn_box clearfix">
+                                    <div class="col-sm-6 btn_holder"><a href="#" class="option_btn"><img src="images/apple_btn.png" class="img-responsive" /></a></div>
+                                    <div class="col-sm-6 btn_holder"><a href="#" class="option_btn"><img src="images/google_btn.png" class="img-responsive" /></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs">
+                            <div class="info_box center-block">
+                                <img src="images/hand_img.png" class="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+  <% if Rails.application.config.ended %>
+    <%= render "users/campaign_ended" %>
+  <% else %>
+    <%= render "users/campaign_ongoing" %>
+  <% end %>
+</div>
