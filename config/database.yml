@@ -1,7 +1,11 @@
 development:
   adapter: postgresql
-  database: prelaunchr_development
+  encoding: unicode
+  database: sample_development
+  username: cosmopal
+  password: 1234
   host: localhost
+  port: 5432
 test:
   adapter: postgresql
   database: prelaunchr_test
