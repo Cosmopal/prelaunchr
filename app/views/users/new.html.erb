@@ -23,6 +23,13 @@
                                     <div class="col-sm-6 btn_holder"><a href="#" class="option_btn"><img src="images/apple_btn.png" class="img-responsive" /></a></div>
                                     <div class="col-sm-6 btn_holder"><a href="#" class="option_btn"><img src="images/google_btn.png" class="img-responsive" /></a></div>
                                 </div>
+                                <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
+                                      <% if Rails.application.config.ended %>
+                                        <%= render "users/campaign_ended" %>
+                                      <% else %>
+                                        <%= render "users/campaign_ongoing" %>
+                                      <% end %>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6 hidden-xs">
