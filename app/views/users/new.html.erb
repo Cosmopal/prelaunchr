@@ -1,477 +1,313 @@
-<!-- 
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Pixa - App Landing Page with Page Builder</title>
+    <meta name="description" content="Pixa - App Landing Page Pack with Page builder">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
 
-    </head>
-    <body> -->
-        
-        <div class="container-fluid">
-            <div class="row header_back">
-                <div class="container bottom_mrg_remove">
-                    <div class="row bottom_mrg_remove header_row">
-                        <div class="col-sm-6 ">
-                            <div class="info_box center-block">
-                                <h1 class="name_box">Ask IITians</h1>
-                                <p class="header_smal_txt">A great new free bootstrap theme to showcase your new application.</p>
-                                <div class="btn_box clearfix">
-                                    <div class="col-sm-6 btn_holder"><a href="#" class="option_btn"><img src="images/apple_btn.png" class="img-responsive" /></a></div>
-                                    <div class="col-sm-6 btn_holder"><a href="#" class="option_btn"><img src="images/google_btn.png" class="img-responsive" /></a></div>
-                                </div>
-                                <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-                                      <% if Rails.application.config.ended %>
-                                        <%= render "users/campaign_ended" %>
-                                      <% else %>
-                                        <%= render "users/campaign_ongoing" %>
-                                      <% end %>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 hidden-xs">
-                            <div class="info_box center-block">
-                                <img src="images/hand_img.png" class="img-responsive" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="container-fluid">
-            <div class="row feature_area">
-                <div class="container ">
-                    
-                    <div class="row info_row">
-                        <div class="col-sm-4 feature_wrp hidden-xs" id="feature_info02">
-                            <h3>Great Feature</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Mauris interdum velit vitae nulla molestie eu. 
-                            </p>
-                        </div>
-                        
-                        <div class="col-sm-4 iphone_outer">
-                            <div class="iphone_box clearfix">
-                                
-                            	<div class="feature_tbl_wrp visible-xs">
-                                    <div class="col-xs-12 text-right feature_btn_wrp">
-                                        <button type="button" class="feature_btn" data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu.">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 text-left feature_btn_wrp">
-                                        <button type="button" class="feature_btn" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu.">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 text-right feature_btn_wrp">
-                                        <button type="button" class="feature_btn" data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu.t">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 text-left feature_btn_wrp">
-                                        <button type="button" class="feature_btn" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu.">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-				
-                                </div>
-                                
-                            	<div class="feature_tbl_wrp center-block hidden-xs">
-                                    <div class="col-xs-12 text-right feature_btn_wrp">
-                                        <button type="button" class="feature_btn" id="feature_btn01">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 text-left feature_btn_wrp">
-                                        <button type="button" class="feature_btn" id="feature_btn02">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 text-right feature_btn_wrp">
-                                        <button type="button" class="feature_btn" id="feature_btn03">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 text-left feature_btn_wrp">
-                                        <button type="button" class="feature_btn" id="feature_btn04">
-                                            <i class="fa fa-circle"></i>
-                                        </button>
-                                    </div>
-				
-                                </div>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/et-line.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/slick.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/hover-min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
 
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-4 feature_wrp hidden-xs" id="feature_info01">
-                            <h3>Great Feature</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Mauris interdum velit vitae nulla molestie eu. 
-                            </p>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Style Changer -->
+    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-3.css" title="color-3" />
+    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-1.css" title="color-1" />
+    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-2.css" title="color-2" />
+    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-4.css" title="color-4" />
+    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-5.css" title="color-5" />
+    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-6.css" title="color-6" />
+    <link type="text/css" rel="stylesheet" href="demo/style-changer.css">
+
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div class="preloader-outer">
+    <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"></div>
+</div>
+
+
+<!-- Section Hero 4-3 -->
+<section id="section-3-1" class="hero hero-bg-colored hero-bg-7 layout-4">
+    <div class="container">
+
+        <!-- call to action -->
+        <div class="cta text-center relative z-1">
+<img src="assets/images/askiitians-logo.png" class="header-logo" alt="logo-footer">
+            <!-- text -->
+            <h2 class="b20-1" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; "><span class="strong">Pixa</span> Mobile App Landing Page Template</h2>
+            <p class="b20-2" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">Pixa is specially designed for your Mobile Application</p>
+
+            <!-- Email Section -->
+            <div class="container container-700">
+
+            <form id="mailchimp-single" method="post" action="http://themeforest.us12.list-manage.com/subscribe/post?u=fb2bdc0a1266cefb76bf70058&amp;id=3a5f127651">
+
+                <div class="row"><!-- Row -->
+
+                    <div class="col-md-9 col-sm-9 col-xs-8 pr-0"><!-- Email input -->
+                        <div class="form-group mb-0">
+                            <input type="email" class="form-control email" id="EMAIL" name="SubMail" placeholder="Email address">
                         </div>
                     </div>
-                    
-                    <div class="row info_row">
-                        <div class="col-sm-4 feature_wrp hidden-xs" id="feature_info04">
-                            <h3>Another Great Feature</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Mauris interdum velit vitae nulla molestie eu. 
-                            </p>
-                        </div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4 feature_wrp hidden-xs" id="feature_info03">
-                            <h3>Another Great Feature</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Mauris interdum velit vitae nulla molestie eu. 
-                            </p>
-                        </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-4 pl-0">
+                        <button type="submit" name="submit" value="Submit" class="btn btn-default btn-lg yellow pull-left">Submit</button><!-- Send Button -->
                     </div>
-                    
-                   
-                    
-                </div>
-                
-            </div>
+
+                    <div class="sub-result"><p class="result"></p></div>
+
+                </div><!-- Row end -->
+
+            </form>
+
         </div>
+        <!-- Email Section -->
         
-        <div class="container-fluid feature_area">
-            <div class="row feature_area app_row">
-                <div class="container ">
-                     <div class="row  info_row">
-                        <div class="col-sm-4 app_wrp feature_wrp text-center">
-                            <h3>Get it for IOS</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Mauris interdum velit vitae nulla molestie eu. 
-                            </p>
-                            <div class=" btn_box ">
-                                <a href="#" class="option_btn"><img src="images/apple_btn.png" class="img-responsive center-block" /></a>                               
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-4"></div>
-                        
-                        <div class="col-sm-4 app_wrp feature_wrp text-center">
-                            <h3>Get it for Android</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. 
-                                Mauris interdum velit vitae nulla molestie eu. 
-                            </p>
-                            <div class=" btn_box ">
-                                <a href="#" class="option_btn"><img src="images/google_btn.png" class="img-responsive center-block" /></a>                               
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="container-fluid">
-            <div class="row testimonials_top_row">
-                <div class="container ">
-                    <div class="row ">
-                        <p class="larg_txt comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="sm_txt name">Kyle Turner, Blogger</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row testimonials_row">
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-            </div>
-            <div class="row testimonials_row">
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img2.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“it's very fast, user friendly app. ”</p>
-                        <p class="name">Kyle Turner, Blogger</p>
-                    </a>
-                </div>
-                <div class="col-xs-1">
-                    <a href="#" class="tst_imglink">
-                        <img src="images/flk_img1.jpg" class="img-responsive desaturate"/>
-                        <p class="comment">“Flow is an app that is extremely useful. I would reccomend it to anyone.”</p>
-                        <p class="name">Jane, CEO</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div class="container-fluid">
-            <div class="row row testimonials_bottom_row ">
-                <div class="container ">
-                    <div class="row ">
-                        <p class="larg_txt">Say Hi & Get in Touch</p>
-                        <p class="sm_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendiss</p>
-                        
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                       <i class="fa fa-circle fa-stack-2x"></i>
-                                       <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li> 
-                            
-                            <li>
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>  
-                            
-                            <li>
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="container-fluid">
-            <div class="row footer_row">
-                <div class="container ">
-                    <div class="row ">
-                        <ul>
-                            <li><a href="#">Contact </a></li>
-                            <li><a href="#">Download  </a></li>
-                            <li><a href="#">Press </a></li>
-                            <li><a href="#">Email </a></li>
-                            <li><a href="#">Support </a></li>
-                            <li><a href="#">PrivacyPolicy </a></li>
-                        </ul> 
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-        <script>
             
-        </script>
-<!--     </body>
+        </div>
+
+    </div>
+
+    <!-- Phone Image -->
+    <div class="text-center relative z-1 b20-4" data-sr-id="4" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.4s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.4s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.4s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.4s; ">
+        <img src="assets/images/horizontal-phone.png" alt="phone" class="phone-img">
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay-gradient"></div>
+
+</section>
+<!-- Section Hero 4-3 end -->
+
+
+<!-- Section Feature -->
+<section id="section-2-3" class="features-2">
+    <div class="container">
+
+        <!-- section header -->
+        <div class="section-header text-center">
+            <h2>Features</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.</p>
+        </div>
+
+        <div class="row">
+
+            <!-- wrap -->
+            <div class="features-2-wrap">
+
+                <!-- features left -->
+                <div class="col-md-4 col-sm-6 col-xs-12 features-left l40-1" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateX(0) scale(1); opacity: 1;transform: translateX(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; ">
+
+                    <!-- item 1 -->
+                    <div class="item clearfix">
+                        <div class="feature-icon">
+                            <span class="icon-layers icon"></span>
+                        </div>
+                        <div class="text text-right">
+                            <h3>+80 Unique sections</h3>
+                            <p>Ponderum inimicus tractatos vis in doming nostrud eu sit graece doming reprimique efficiantur pro.</p>
+                        </div>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="item clearfix">
+                        <div class="feature-icon">
+                            <span class="icon-expand icon"></span>
+                        </div>
+                        <div class="text text-right">
+                            <h3>Drag and drop builder</h3>
+                            <p>Ponderum inimicus tractatos vis in doming nostrud eu sit graece doming reprimique efficiantur pro.</p>
+                        </div>
+                    </div>
+
+                    <!-- item 3 -->
+                    <div class="item clearfix">
+                        <div class="feature-icon">
+                            <span class="icon-laptop icon"></span>
+                        </div>
+                        <div class="text text-right">
+                            <h3>+10 Hero layouts</h3>
+                            <p>Ponderum inimicus tractatos vis in doming nostrud eu sit graece doming reprimique efficiantur pro.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- image center -->
+                <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+                    <img src="assets/images/phone-single.png" alt="features" class="b40-1" data-sr-id="4" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; ">
+                </div>
+
+                <!-- features right -->
+                <div class="col-md-4 col-sm-6 col-xs-12 features-right r40-1" data-sr-id="8" style="; visibility: visible;  -webkit-transform: translateX(0) scale(1); opacity: 1;transform: translateX(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.1s; ">
+
+                    <!-- item 1 -->
+                    <div class="item clearfix">
+                        <div class="feature-icon">
+                            <span class="icon-heart icon"></span>
+                        </div>
+                        <div class="text">
+                            <h3>Stunning design</h3>
+                            <p>Ponderum inimicus tractatos vis in doming nostrud eu sit graece doming reprimique efficiantur pro.</p>
+                        </div>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="item clearfix">
+                        <div class="feature-icon">
+                            <span class="icon-documents icon"></span>
+                        </div>
+                        <div class="text">
+                            <h3>Well documented</h3>
+                            <p>Ponderum inimicus tractatos vis in doming nostrud eu sit graece doming reprimique efficiantur pro.</p>
+                        </div>
+                    </div>
+
+                    <!-- item 3 -->
+                    <div class="item clearfix">
+                        <div class="feature-icon">
+                            <span class="icon-chat icon"></span>
+                        </div>
+                        <div class="text">
+                            <h3>24/7 Support</h3>
+                            <p>Ponderum inimicus tractatos vis in doming nostrud eu sit graece doming reprimique efficiantur pro.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Section Feature end -->
+
+<!-- Section video 1 -->
+<section id="section-2-4" class="video-1">
+    <div class="container text-center relative z-1">
+
+        <!-- button -->
+        <div class="button">
+            <a href="https://vimeo.com/138540343" class="video-icon">
+                <i class="fa fa-play hvr-push" aria-hidden="true"></i>
+            </a>
+        </div>
+        <!-- text -->
+        <h4>Watch the video</h4>
+    </div>
+    <!-- overlay -->
+    <div class="overlay-colored"></div>
+</section>
+<!-- Section video 1 end -->
+
+<!-- Section screenshots 2 -->
+<section id="section-2-5" class="screenshots">
+    <div class="container">
+
+        <!-- section header -->
+        <div class="section-header text-center">
+            <h2>Screenshots</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.</p>
+        </div>
+
+    </div>
+
+    <!-- screenshots 2 wrap -->
+    <div class="screenshots-02-wrap">
+        <div class="item">
+            <img src="assets/images/screens/1.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/2.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/4.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/5.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/8.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/11.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/1.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/2.jpg" alt="screenshot" />
+        </div>
+        <div class="item">
+            <img src="assets/images/screens/4.jpg" alt="screenshot" />
+        </div>
+    </div>
+
+</section>
+<!-- Section screenshots 2 end -->
+
+<footer id="footer-1" class="footer footer-dark">
+    <div class="container">
+
+        <!-- footer logo -->
+        <img src="assets/images/askiitians-logo.png" class="footer-logo" alt="logo-footer">
+    
+        <!-- footer menu -->
+        <ul class="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- copyright text -->
+        <span class="copyright">© Copyright © 2006-2017 askIITians, All Rights Reserved.</span>
+
+        <!-- social icons -->
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        </ul>
+
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.single-page.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ajaxchimp.js"></script>
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/scrollreveal.min.js"></script>
+<script type="text/javascript" src="assets/js/classie.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<!-- Style Changer -->
+<script type="text/javascript" src="demo/style_switcher.js"></script>
+
+</body>
 </html>
- -->
