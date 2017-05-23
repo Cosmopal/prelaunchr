@@ -921,7 +921,7 @@ section.colored {
 }
 
 .hero.layout-4 .cta {
-    padding: 200px 0 40px;
+    padding: 125px 0 40px;
 }
 
 .hero.layout-5 .cta {
@@ -3105,7 +3105,7 @@ h2.light p {
 .screenshots .item{float:left;width:10%}
 ul.slick-dots{display:none!important}
 .footer-logo{width:200px}
-.header-logo{margin-top:-120px;width:300px}
+.header-logo{margin-top:-120px;width:400px}
 #home .hero{height:850px!important}
 .hero-bg-7 {
     background: url(../images/hero-07.jpg) fixed!important;
