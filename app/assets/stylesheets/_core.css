@@ -248,8 +248,8 @@ html.home{
 }
 
 #refer .header{
-	height: 50px;
-	background: #074E6F;
+	height: 60px;
+	background: #9E36A8;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -257,7 +257,7 @@ html.home{
 }
 
 #refer .header .content{
-	width: 315px;
+	/*width: 0px;*/
 	margin: 0 auto;
 }
 
@@ -277,12 +277,13 @@ html.home{
 	font-weight: normal;
 	font-size: 0;
 	line-height: 0;
-	margin-right: 14px;
+	/*margin-right: 14px;*/
 	letter-spacing: 1px;
-	background: image-url("refer/logo.png") 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
+	/*background: image-url("refer/logo.png") 0 0 no-repeat;*/
+	background: image-url("../assets/images/askiitians-logo.png") 0 0 no-repeat;
+	background-size: 132px 35px;
+	height: 40px;
+	width: 160px;
 	margin-top: 15px;
 }
 
@@ -336,7 +337,7 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #663AB5;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
