@@ -9,18 +9,22 @@
 <div class="hero">
   <div class="page-content clearfix">
     <div class="mammoth">
-      <span class="need brandon">Shaving Is<br>Evolving</span>
+      <span class="need brandon">Sharing Is<br>Caring</span>
     </div>
     <div class="share-wrap">
       <p class="why brandon">Don't leave your friends behind</p>
+      <!-- <h4>Don't leave your friends behind</h4> -->
       <p class="title brandon">INVITE FRIENDS &<br>Earn FREE access</p>
-      <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn FREE Subscription for<br>you and your friend who signs up.</p>
+      <!-- <h2 class="cta">INVITE FRIENDS &<br>Earn FREE access</h2> -->
+      <p class="subtitle brandon"> Share the app to your Friends<br> and earn free Subscription for<br>you <span style="font-weight: 900">AND</span> your friend who Signs Up*.</p>
       <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
       <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
+      <p class="subtitle brandon" style=";margin-top: 10px;">Share your unique link above via email <br> or share via Facebook</p>
       <div class="social-links">
+      
         <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
-        <div class="sep"></div>
-        <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+        <!-- <div class="sep"></div> -->
+        <!-- <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a> -->
       </div>
     </div>
   </div>
@@ -82,7 +86,9 @@
     <% end %>
     <p class="check brandon">Keep checking</p>
 
-    <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>
-    <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+    <!-- <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p> -->
+    <!-- <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a> -->
+    <a class="policy brandon">*Terms and Conditions Applied.<br>
+    Users who join the app after launch  would be considered for the rewards.</a>
   </div>
 </div>
