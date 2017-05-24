@@ -211,6 +211,7 @@ h2.light {
     background: -o-linear-gradient(bottom right,rgba(103,98,160,0.8),rgba(179, 55, 181, 0.8));
     background: -moz-linear-gradient(bottom right,rgba(103,98,160,0.8),rgba(179, 55, 181, 0.8));
     background: linear-gradient(to bottom right,rgba(103,98,160,0.8),rgba(179, 55, 181, 0.8));
+    /*background: radial-gradient(at top,rgba(179, 55, 181, 0.8) 5%,rgba(103,98,160,0.8));*/
     left: 0;
     height: 100%;
     top: 0;
