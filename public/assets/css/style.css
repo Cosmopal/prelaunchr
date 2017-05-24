@@ -323,6 +323,16 @@ h2.light {
         margin-top: -30px;
         margin-left: -30px;
     }
+@media only screen and (max-width: 768px) {
+    .features-2 .item, .features-2-wrap .features-left .text{text-align:center!important}
+    img.b40-1{margin-bottom:40px}
+    }
+
+@media only screen and (max-width: 490px) {
+    .hero .pr-0.col-xs-8{width:100%!important;padding:0!important}
+    .hero .pl-0.col-xs-4{width:100%!important;padding:0!important}
+    button.btn.yellow{margin:20px auto;float:none!important}
+    }
 
     .preloader:before {
         left: -2px;

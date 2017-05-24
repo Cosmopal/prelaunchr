@@ -1,6 +1,27 @@
-<p class="byline brandon" >Be the first to know</p>
-<%= form_for @user, :url => { :action => "create" } do |f| %>
-  <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" ,:style =>
-  "color:black" %>
-  <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
-<% end %>
+
+            <!-- Email Section -->
+            <div class="container container-700">
+
+
+                <div class="row"><!-- Row -->
+
+                    <div class="col-md-9 col-sm-9 col-xs-8 pr-0"><!-- Email input -->
+                        <div class="form-group mb-0">
+                			<%= form_for @user, :url => { :action => "create" } do |f| %>
+  								<%= f.text_field :email, :placeholder => "Enter Email", :class => "form-control email" ,:style => "color:black" %>
+                  
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 pl-0">
+								<input class="btn btn-default btn-lg yellow pull-left" name="commit" type="submit" value="Get Offer" />
+							<% end %>
+                    </div>
+                    <div class="sub-result"><p class="result"></p></div>
+
+                </div><!-- Row end -->
+
+            </form>
+
+        </div>
+        <!-- Email Section -->
+
