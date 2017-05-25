@@ -435,7 +435,8 @@ html.home{
 }
 
 #refer .prizes .progress .mover .bar{
-	background: image-url("refer/progress-done.png") 0 0 repeat-x;
+	/*background: image-url("refer/progress-done.png") 0 0 repeat-x;*/
+	background-color: #CE6DB6;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
@@ -469,12 +470,12 @@ html.home{
 }
 
 #refer .prizes .products li.title .friends{
-	margin-top: 7px;
+	margin-top: 55px;
 	letter-spacing: 2px;
 }
 
 #refer .prizes .products li.title .rewards{
-	margin-top: 45px;
+	margin-top: 38px;
 	letter-spacing: 2px;
 }
 
