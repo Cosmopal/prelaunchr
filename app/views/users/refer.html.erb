@@ -1,67 +1,70 @@
-<div class="header">
-  <div class="content">
-    <!-- <p class="logo brandon">Harry&#8217;s</p> -->
-    <p class="logo brandon">AskIITians</p>
-    <!-- <p class="byline brandon">THANK YOU FOR SIGNING UP</p> -->
-  </div>
-</div>
-
 <div class="hero">
+<!-- <section id="section-3-1" class="hero hero-bg-colored hero-bg-7 layout-4"> -->
   <div class="page-content clearfix">
-    <div class="mammoth">
-      <span class="need brandon">Sharing Is<br>Caring</span>
-    </div>
     <div class="share-wrap">
-      <p class="why brandon">Don't leave your friends behind</p>
+  <div class="head">Sharing Is Caring</div>
+      <p class="subhead">Don't leave your friends behind</p>
       <!-- <h4>Don't leave your friends behind</h4> -->
-      <p class="title brandon">INVITE FRIENDS &<br>Earn FREE access</p>
+      <p class="title">INVITE FRIENDS & Earn FREE access</p>
       <!-- <h2 class="cta">INVITE FRIENDS &<br>Earn FREE access</h2> -->
-      <p class="subtitle brandon"> Share the app to your Friends<br> and earn free Subscription for<br>you <span style="font-weight: 900">AND</span> your friend who Signs Up*.</p>
+      <div class="share-text"> Share the app to your Friends and earn free Subscription for<br>you <span style="font-weight: 900">AND</span> your friend who Signs Up*.</div>
       <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-      <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
-      <p class="subtitle brandon" style=";margin-top: 10px;">Share your unique link above via email <br> or share via Facebook</p>
+      <p class="share-text" style=";margin-top: 10px;">Share your unique link above via email or share via Facebook</p>
       <div class="social-links">
       
-        <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
+        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fboiling-ocean-22534.herokuapp.com%2F?ref=2c1de694c8&title=Harrys" class="fb" target="_blank">
+    <img src="assets/images/fb-btn.png">
+    </a>
         <!-- <div class="sep"></div> -->
-        <!-- <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a> -->
+        <!-- <a href="http://twitter.com/share?url=http%3A%2F%2Fboiling-ocean-22534.herokuapp.com%2F?ref=2c1de694c8&text=%23Shaving+is+evolving.+Excited+for+%40harrys+to+launch." class="twit" target="_blank"></a> -->
       </div>
     </div>
   </div>
+    <!-- <div class="overlay-gradient"></div>
+</section> -->
 </div>
-
-<%
-  referrals_count = @user.referrals.count
-
-  stops = User::REFERRAL_STEPS
-
-  found = nil
-
-  stops.reverse_each { |stop|
-    if stop["count"] <= referrals_count and !found
-      stop["selected"] = true
-      found = stop
-    else
-      stop["selected"] = false
-    end
-  }
-%>
-<div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
+<div class="prizes">
   <div class="page-content">
-    <p class="callout brandon">Here's How It Works:</p>
+    <p class="callout brandon"><strong><span>3</span> friends</strong> have joined</p>
+
     <ul class="products clearfix">
-      <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
-      <% stops.each do |stop| %>
-        <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
-          <div class="circle"><%= stop["count"] %></div>
+      <li class="title brandon"></li>
+        <li class="product brandon  ">
+          <div class="circle">5</div>
           <div class="sep"></div>
-          <p><%= stop["html"].html_safe %></p>
+          <p>2<br>Weeks</p>
 
           <div class="tooltip">
-            <img src="<%= stop["image"] %>" height="254">
+            <img src="/refer/cream-tooltip@2x.png" height="254">
           </div>
         </li>
-      <% end %>
+        <li class="product brandon  ">
+          <div class="circle">10</div>
+          <div class="sep"></div>
+          <p>1<br>Month</p>
+
+          <div class="tooltip">
+            <img src="/refer/truman@2x.png" height="254">
+          </div>
+        </li>
+        <li class="product brandon  ">
+          <div class="circle">25</div>
+          <div class="sep"></div>
+          <p>6 <br> Weeks</p>
+
+          <div class="tooltip">
+            <img src="/refer/winston@2x.png" height="254">
+          </div>
+        </li>
+        <li class="product brandon  last">
+          <div class="circle">50</div>
+          <div class="sep"></div>
+          <p>One Year<br>Free Blades</p>
+
+          <div class="tooltip">
+            <img src="/refer/blade-explain@2x.png" height="254">
+          </div>
+        </li>
     </ul>
 
     <div class="progress">
@@ -70,26 +73,45 @@
       </div>
     </div>
 
-    <%
-      words = ''
-      if referrals_count == 1
-        words = 'friend has'
-      elsif
-        words = 'friends have'
-      end
-    %>
 
-    <% if referrals_count == 0 %>
-      <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
-    <% else %>
-      <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
-    <% end %>
-    <p class="check brandon">Keep checking</p>
-
-    <!-- <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p> -->
-    <!-- <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a> -->
-    <a class="policy brandon">*Terms and Conditions Applied.<br>
+  </div>
+  <a class="policy brandon">*Terms and Conditions Applied.<br>
     Users who sign up on this pre launch page using your link and then join the app after launch  would be considered for the reward points.
     <br>AskIITians reserves the right to cancel the award for any participant of this prelaunch offer without prior notice.</a>
   </div>
 </div>
+
+<!-- <div class="desc">
+lkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfdlkdfjjfdkj dlkjfkmfd
+</div>
+ -->
+ 
+<footer id="footer-1" class="footer footer-dark">
+    <div class="container">
+
+        <!-- footer logo -->
+        <img src="assets/images/askiitians-logo.png" class="footer-logo" alt="logo-footer">
+    
+        <!-- footer menu -->
+        <ul class="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- copyright text -->
+        <span class="copyright">© Copyright © 2006-2017 askIITians, All Rights Reserved.</span>
+
+        <!-- social icons -->
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        </ul>
+
+    </div>
+</footer>

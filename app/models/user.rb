@@ -5,8 +5,10 @@ class User < ActiveRecord::Base
   has_many :referrals, class_name: 'User', foreign_key: 'referrer_id'
 
   validates :email, presence: true, uniqueness: true, format: {
-    with: /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/i,
-    message: 'Invalid email format.'
+    # with: /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/i,
+    with: /[+]*\d{10,11}/i,
+    # message: 'Invalid email format.'
+    message: 'Invalid Mobile Number format.'
   }
   validates :referral_code, uniqueness: true
 

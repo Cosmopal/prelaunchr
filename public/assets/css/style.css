@@ -3124,3 +3124,44 @@ ul.slick-dots{display:none!important}
     background-size: cover!important;
 }
 #home{padding:0!important;margin:0!important}
+
+
+.hero{background: url(../images/main-banner.jpg) fixed!important;background-size: cover!important;min-height:600px;border-bottom:6px solid #ffc600}
+/*.hero{background: url(../images/background.jpg) fixed!important;background-size: cover!important;min-height:600px;border-bottom:6px solid #ffc600}*/
+#refer .share-wrap{float:none!important;text-align:center;width:100%!important}
+.share-wrap .head{font-weight:300;font-family:"Roboto",sans-serif;color:#fff;font-size:60px;margin:50px 0}
+#refer .subhead{color:#fff;font-size:36px;font-family:"Roboto",sans-serif;}
+p.title{color:#fff!important;font-size:30px;font-family:"Roboto",sans-serif;margin:40px 0}
+.share-text{color:#fff;font-size:20px;font-family:"Roboto",sans-serif;text-transform:capitalize}
+#refer .share-wrap .copy-link{width:100%!important;max-width:700px}
+.callout.brandon{font-family:"Roboto",sans-serif!important;font-size:30px!important;margin:53px 0!important}
+#refer .prizes .callout{line-height:40px}
+.callout.brandon strong{color:#a12582}
+#refer .prizes .progress{top:170px!important}
+#refer .prizes .products li.product p{font-family:"Roboto",sans-serif!important;font-size:16px!important}
+.desc{font-family:"Roboto",sans-serif!important;font-size:14px;text-align:center;padding:0 5%;margin-bottom:40px;line-height:24px}
+#refer .share-wrap .social-links{width:100%}
+#refer .share-wrap .social-links .fb{width:300px;margin-top:20px!important}
+.share-wrap a img{max-width:300px}
+.share-wrap a img:hover{opacity:0.9}
+
+
+@media only screen and (max-width: 1260px) {
+#refer .prizes ul.products, #refer .prizes .progress{display:none}
+#refer .prizes{padding:10px}
+}
+
+@media only screen and (max-width: 768px) {
+.features-2 .item, .features-2-wrap .features-left .text{text-align:center!important}
+img.b40-1{margin-bottom:40px}
+.share-wrap .head{font-size:40px}
+#refer .subhead, #refer .share-wrap .title{font-size:20px}
+#refer .hero{height:950px!important}
+#refer .share-wrap .social-links .fb, .share-wrap a img{max-width:220px}
+}
+
+@media only screen and (max-width: 490px) {
+.hero .pr-0.col-xs-8{width:100%!important;padding:0!important}
+.hero .pl-0.col-xs-4{width:100%!important;padding:0!important}
+button.btn.yellow{margin:20px auto;float:none!important}
+}
